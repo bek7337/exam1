@@ -1,0 +1,11 @@
+version: '3.11'
+
+services:
+  bot:
+    build: .
+    restart: always
+    working_dir: /app
+    container_name: exam_tg_bot
+    environment:
+      - TOKEN={5917312329:AAFfeJ_5r2WN8CxpYDLWk_q2QVLcS-IcbDs}
+    command: python delete_mesege_bot.py
